@@ -17,5 +17,5 @@ function validarNombre(){
 function mostrarSpan(mensaje){
   var span = document.createElement('span');
   span.innerHTML = mensaje;
-  return mensaje;
+  return span;
 }
