@@ -1,0 +1,38 @@
+.content{
+  text-align: left;
+  margin: 10px 30% ;
+}
+label, input{
+  display: inline-block;
+  margin: 7px;
+  padding: 7px;
+}
+input{
+  width: 140px;
+}
+label{
+  width: 98px;
+}
+
+.input-box span{
+  display: block;
+  background-color: #FF483B;
+  padding: 5px;
+  position: absolute;
+  left: 105%;
+  top: 8px;
+  width: 200px;
+  color: white;
+}
+
+.input-box span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #FF483B;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
