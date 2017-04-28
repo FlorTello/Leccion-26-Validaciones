@@ -18,26 +18,6 @@ label{
 .input-box{
   position: relative;
 }
-.input-box span{
-  display: none;
-  background-color: #FF483B;
-  padding: 5px;
-  position: absolute;
-  left: 90%;
-  top: 8px;
-  width: 200px;
-  color: white;
-  border-radius: 5px;
-}
-
-.input-box span:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-right: 10px solid #FF483B;
-  border-bottom: 5px solid transparent;
-  position: absolute;
-  right: 100%;
-  top: 10px;
+textarea{
+  margin-left: 140px;
 }

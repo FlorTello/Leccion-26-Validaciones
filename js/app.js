@@ -1,27 +1,29 @@
 window.addEventListener('load',validar);
+var inputs = document.getElementsByTagName('input');
 
 function validar(){
-  var textnombre = document.getElementById('textnombre');
-  textnombre.addEventListener('blur',validarNombre);
+  inputs[0].addEventListener('blur',validarNombre);
+  inputs[1].addEventListener('blur',validarNombre);
+  inputs[7].addEventListener('blur',validarPassword);
 }
 
 function validarNombre(){
-  // var res = str.replace(/microsoft/i, "W3Schools");
-  var ExpReg = /([A-ZÁÉÍÓÚa-zñáéíóú]+[\s]*)+$/;
-  if(ExpReg.test(this.value) == false){
+  var ExpReg = /[a-zA-Z][a-zA-Z]+/g;
+  if(ExpReg.test(this.value) == true){
     console.log(this.parentNode);
-      // this.parentNode.appendChild(mostrarSpan("Error"));
-      this.focus();
+      var nuevo = this.value.split(' ').map((e,i) =>  e.charAt(0).toUpperCase() + e.substring(1).toLowerCase()).join(' ');
+      this.value = this.value.replace(this.value,nuevo)
   }
   else{
-    var nuevo = this.value.split(' ').map((e,i) =>  e.charAt(0).toUpperCase() + e.substring(1).toLowerCase()).join(' ');
-    console.log(nuevo);
-    this.value = this.value.replace(this.value,nuevo)
+    this.focus();
   }
 }
-
-function mostrarSpan(mensaje){
-  var span = document.createElement('span');
-  span.innerHTML = mensaje;
-  return span;
+function validarPassword(){
+  if(this === inputs[6]){
+    return true;
+  }
+  else{
+    alert("Las contraseñas no coinciden");
+    return false;
+  }
 }
