@@ -1,6 +1,8 @@
 .content{
+  width: 50%;
   text-align: left;
-  margin: 10px 30% ;
+  margin: 10px 20% ;
+  position: relative;
 }
 label, input{
   display: inline-block;
@@ -13,16 +15,19 @@ input{
 label{
   width: 98px;
 }
-
+.input-box{
+  position: relative;
+}
 .input-box span{
-  display: block;
+  display: none;
   background-color: #FF483B;
   padding: 5px;
   position: absolute;
-  left: 105%;
+  left: 90%;
   top: 8px;
   width: 200px;
   color: white;
+  border-radius: 5px;
 }
 
 .input-box span:after {
