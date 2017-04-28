@@ -12,18 +12,17 @@
     <div class="content">
       <div class="input-box">
         <label for="">Nombre</label>
-        <input type="text" id = "textnombre" required pattern="[A-Z][a-z ]+"><br>
+        <input type="text" id = "textnombre"  pattern="[A-Z][a-z ]+" placeholder="Ingrese Nombre" required><br>
         <span></span>
       </div>
       <div class="input-box">
         <label for="">Apellido</label>
-        <input type="text" id = "textapellido" required pattern="[A-Z][a-z ]+"><br>
+        <input type="text" id = "textapellido" required pattern="[A-Z][a-z ]+" placeholder="Ingrese Apellidos"><br>
         <span></span>
       </div>
       <div class="input-box">
         <label for="">DNI :</label>
-        <!-- //min = "00000000" max ="99999999" maxlength="8" -->
-        <input type="number" id = "textdni" size="8" step="1" min = "00000000" max ="99999999" pattern="[0-9].{8,}" required><br>
+        <input type="number" id = "textdni" size="8" step="1" min = "00000000" max ="99999999" pattern="[0-9].{8,}" placeholder="Número de DNI"required><br>
       </div>
       <div class="input-box">
         <label for="">Fecha :</label>
@@ -31,23 +30,23 @@
       </div>
       <div class="input-box">
         <label for="">Celular :</label>
-        <input type="text" id = "textcelular" pattern="[0-9]{9,9}" maxlength = "9" required><br>
+        <input type="text" id = "textcelular" pattern="[0-9]{9,9}" maxlength = "9" required placeholder="Ingrese Celular"><br>
       </div>
       <div class="input-box">
         <label for="">Teléfono :</label>
-        <input type="text" id = "texttelefono" pattern="[0-9]{7,7}" maxlength = "7" required><br>
+        <input type="text" id = "texttelefono" pattern="[0-9]{7,7}" maxlength = "7" required placeholder="Ingrese Telefono"><br>
       </div>
       <div class="input-box">
         <label for="">Contraseña :</label>
-        <input type="password" id = "textpassword" required><br>
+        <input type="password" id = "textpassword" required placeholder="Ingrese Password"><br>
       </div>
       <div class="input-box">
         <label for="">Confirmación</label>
-        <input type="password" id = "textconfirmacion" required><br>
+        <input type="password" id = "textconfirmacion" required placeholder="Ingrese Password"><br>
       </div>
       <div class="input-box">
         <label for="">Comentarios</label><br>
-        <textarea name="name" rows="8" cols="30" id = "textcomentarios" required></textarea><br>
+        <textarea name="name" rows="8" cols="30" id = "textcomentarios" required placeholder="Ingrese Comentarios"></textarea><br>
       </div>
       <div class="input-box">
         <label for="terminos">Terminos y Condiciones</label>
